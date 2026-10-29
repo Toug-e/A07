@@ -2,12 +2,6 @@ a:focus,a:hover{
   font-style: italic;
   color: #5b80b8;
   }
-  
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 h1, h2, h3, ul {
   padding: 0.5em 0 0.5em 0;
