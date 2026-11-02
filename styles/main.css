@@ -1,6 +1,7 @@
-a:focus,a:hover{
+a: 
+a:focus,a:hover {
   font-style: italic;
-  color: #5b80b8;
+  color: var(--accent-color);
   }
 
 h1, h2, h3, ul {
@@ -12,7 +13,13 @@ body {
     font-size: 100%;
     width: 80%;
     margin: 0 auto;
-    border: 2px solid #000000;
+    border: 2px solid #000000 ;
+    padding: 20px;
+    
+  }
+  blockquote{
+    font-style: italic;
+    padding: 0.5em 0 0.5em 0;
   }
 
 h1 {
@@ -34,47 +41,59 @@ h3 {
 ul {
     margin: 2em 0;  
 }
-img{
+img {
     margin: .75em 1em;
 
 }
     
-header{
-    background-color: #800000;
+header {
+    background: linear-gradient(30deg, #7e1414 0%, #f6f6f6 65%, #8e5714 100%);
     color: white;
     text-align: center;
     padding: 5px;
-    border-bottom: 5px solid #010000;
+    border-bottom: 2px solid #000000;
 }
 
 header h2 {
     font-size: 170%;
-   text-indent: 30px;
+    padding-bottom: 0;
+   
 }
 header h3 {
     font-size: 130%;
     font-style: italic;
-    text-indent: 30px;
+    padding-bottom: 1em;
+    
 }
 header img {
     float: left;
+    margin: .75em .75em;
 
 }
+/*For the <main> element, add 1em of padding
+ to the right, left, and bottom*/
 main {
     clear: left;
+    padding: 1em 0 1em 0 1em 0 1em 0;
+
 }
 
 main h1 {
-    border-bottom: 2px solid #000000;
-    border-top: 2px solid #000000;
+    border-bottom: 2px solid #d3c8c8;
+    border-top: 2px solid #fdfafa;
+}
+
+main img {
+    border: 4px double var(--border-color);
+    border-radius: 12px;
 }
 
 footer p {
     font-size: 80%;
     text-align: center;
-    background-color: hwb(0 9% 26%);
-    color: white;
+    background-color: hwb(0 13% 69%);
+    color: rgb(121, 40, 40);
     text-align: center;
-    padding: 5px;
+    padding: 1em 0 1em 0;
     border-bottom: 5px solid #010000;
 }
